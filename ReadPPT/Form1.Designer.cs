@@ -28,40 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdRun = new System.Windows.Forms.Button();
+            this.txtBoxPath = new System.Windows.Forms.TextBox();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSelectPath = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // folderBrowserDialog1
+            // cmdRun
             // 
-            this.folderBrowserDialog1.HelpRequest += new System.EventHandler(this.folderBrowserDialog1_HelpRequest);
+            this.cmdRun.Location = new System.Drawing.Point(162, 285);
+            this.cmdRun.Name = "cmdRun";
+            this.cmdRun.Size = new System.Drawing.Size(126, 55);
+            this.cmdRun.TabIndex = 0;
+            this.cmdRun.Text = "Run";
+            this.cmdRun.UseVisualStyleBackColor = true;
+            this.cmdRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
-            // button1
+            // txtBoxPath
             // 
-            this.button1.Location = new System.Drawing.Point(121, 205);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtBoxPath.Location = new System.Drawing.Point(173, 134);
+            this.txtBoxPath.Name = "txtBoxPath";
+            this.txtBoxPath.Size = new System.Drawing.Size(371, 19);
+            this.txtBoxPath.TabIndex = 1;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(530, 285);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(123, 55);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "Quit";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnSelectPath
+            // 
+            this.btnSelectPath.Location = new System.Drawing.Point(575, 134);
+            this.btnSelectPath.Name = "btnSelectPath";
+            this.btnSelectPath.Size = new System.Drawing.Size(126, 55);
+            this.btnSelectPath.TabIndex = 0;
+            this.btnSelectPath.Text = "Select the Path";
+            this.btnSelectPath.UseVisualStyleBackColor = true;
+            this.btnSelectPath.Click += new System.EventHandler(this.btnSelectPath_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 371);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(907, 501);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.txtBoxPath);
+            this.Controls.Add(this.btnSelectPath);
+            this.Controls.Add(this.cmdRun);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.Button button1;
+       // private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button cmdRun;
+        private System.Windows.Forms.TextBox txtBoxPath;
+        private System.Windows.Forms.Button btnSelectPath;
     }
 }
 

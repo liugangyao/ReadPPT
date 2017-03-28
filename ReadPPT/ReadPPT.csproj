@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\FromD\学習資料\liugyCommon\liugyCommon\liugyCommon.csproj">
-      <Project>{de7c8a5d-f0a5-4471-b071-a4d9b89c5366}</Project>
-      <Name>liugyCommon</Name>
+    <ProjectReference Include="..\..\liugyOfficeUtl\liugyOfficeUtl.csproj">
+      <Project>{2D543317-4068-476B-BD28-879636AA2C26}</Project>
+      <Name>liugyOfficeUtl</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
