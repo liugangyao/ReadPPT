@@ -53,7 +53,7 @@ namespace ReadPPT
 
             folderBrowserDialog1.RootFolder =System.Environment.SpecialFolder.MyComputer;
 
-            folderBrowserDialog1.SelectedPath = @"E:\仕事\Project\SRM推進部\00_見積書作成\06_提案書";
+            folderBrowserDialog1.SelectedPath = @"E:\sample";
 
             folderBrowserDialog1.ShowNewFolderButton = false;
 
